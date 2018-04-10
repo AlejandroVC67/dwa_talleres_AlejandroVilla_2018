@@ -1,0 +1,56 @@
+<div class="pokemon">
+
+  <div class="pokemon__title-wrapper">
+    <div class="pokemon__title-image"></div>
+    <!-- <img src="./img/pokemon/flame.png" alt=""> -->
+    <h2 class="pokemon__title">Vulpix</h2>
+  </div>
+
+  <div class="pokemon__image-container">
+    <div class="pokemon__image">
+    </div>
+    <!-- <img src="./img/pokemon/ninetales.png" alt="" class="pokemon__image"> -->
+  </div>
+
+  <div class="pokemon__information">
+    <div class="pokemon__information-list-wrapper">
+      <ul class="pokemon__information-list">
+          <li class="pokemon__information-item">
+            <p>NO:</p>
+            <p>037</p>
+          </li>
+          <li class="pokemon__information-item">
+            <p>Level:</p>
+             <p>100</p>
+          </li>
+          <li class="pokemon__information-item">
+            <p>Type:</p>
+            <p>Fire</p>
+          </li>
+          <li class="pokemon__information-item">
+            <p>Hability:</p>
+            <p>Flames</p>
+          </li>
+          <li class="pokemon__information-item">
+            <p>Height:</p>
+            <p>0.6m</p>
+          </li>
+          <li class="pokemon__information-item">
+            <p>Weight:</p>
+            <p>9.9Kg</p>
+          </li>
+          <li class="pokemon__information-item">
+            <p class="pokemon__information__rating">{{ pokemonRating }}</p>
+            <div class="pokemon__information__rating-arrows">
+              <button class="pokemon__information-button" (click)="ratePokemonUp()">
+                <div class="pokemon__information__arrow" ></div>
+              </button>
+              <button class="pokemon__information-button" (click)="ratePokemonDown()">
+                <div class="pokemon__information__arrow"></div>
+              </button>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>

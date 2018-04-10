@@ -8,8 +8,7 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "create-icon-sprite": "svg-symbols ./src/assets/icons > ./src/assets/sprites/sprite.svg"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -23,7 +22,6 @@
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
-    "ng-svg-icon-sprite": "^0.7.1",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
   },

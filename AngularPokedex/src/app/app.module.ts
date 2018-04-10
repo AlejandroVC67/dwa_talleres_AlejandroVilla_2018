@@ -1,19 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { SvgIconSpriteModule } from 'ng-svg-icon-sprite';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { PokemonComponent } from './pokemon/pokemon.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    PokemonComponent
   ],
   imports: [
-    BrowserModule,
-    SvgIconSpriteModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
