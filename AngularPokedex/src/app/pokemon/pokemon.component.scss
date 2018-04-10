@@ -96,8 +96,10 @@
       grid-gap: 40px;
       &:last-child{
         margin-top: 10px;
-        display: flex;
-        flex-direction: column;
+        @include large {
+          display: flex;
+          flex-direction: column;
+        }
       }
 			@include large {
 				flex-direction: column;
