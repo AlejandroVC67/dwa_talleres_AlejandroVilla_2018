@@ -1,0 +1,64 @@
+@import '~styles/_responsive.scss';
+@import '~styles/_variables.scss';
+@import '~styles/_sprites.scss';
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 27vh;
+  @include large {
+      flex-direction: row;
+  }
+  &__options__list{
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 69px);
+      &__first{
+          width: 100%;
+          height: 100%;
+          transition: .3s ease-in-out;
+          @extend .pokemon-1;
+          background-position-x: 56%;
+          filter: blur(2px);
+          &:hover{
+              filter: blur(0px);
+          }
+      }
+      &__second{
+          width: 100%;
+          height: 100%;
+          transition: .3s ease-in-out;
+          @extend .pokemon-2;
+          background-position-x: 56%;
+          filter: blur(2px);
+          &:hover{
+              filter: blur(0px);
+          }
+      }
+      &__third{
+          width: 100%;
+          transition: .3s ease-in-out;
+          height: 100%;
+          @extend .pokemon-3;
+          background-position-x: 56%;
+          filter: blur(2px);
+          &:hover{
+              filter: blur(0px);
+          }
+      }
+      &__fourth{
+          width: 100%;
+          transition: .3s ease-in-out;
+          height: 100%;
+          @extend .pokemon-4;
+          background-position-x: 56%;
+          filter: blur(2px);
+          &:hover{
+              filter: blur(0px);
+          }
+      }
+  }
+}
