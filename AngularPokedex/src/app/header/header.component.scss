@@ -18,5 +18,10 @@
 		height: 25px;
 		background-repeat: no-repeat;
 		@extend .pokemon-pokeball;
-	}
+  }
+  &__button{
+    display: flex;
+    border: none;
+    background: transparent;
+  }
 }
