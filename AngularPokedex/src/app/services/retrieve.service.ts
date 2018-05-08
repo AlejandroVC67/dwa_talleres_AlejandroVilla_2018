@@ -8,7 +8,7 @@ export class RetrieveService {
     public URL: string;
 
     constructor( private _http:Http ){
-        this.URL = "https://api.myjson.com/bins/14k74q";
+        this.URL = "https://api.myjson.com/bins/161dhe";
     }
 
     getPokemonData() {
