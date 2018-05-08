@@ -7,6 +7,8 @@ import { PokemonComponent } from './pokemon/pokemon.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { PokedexComponent } from './pokedex/pokedex.component';
+import { GridComponent } from './grid/grid.component';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -16,11 +18,13 @@ import { PokedexComponent } from './pokedex/pokedex.component';
     PokemonComponent,
     FooterComponent,
     HomeComponent,
-    PokedexComponent
+    PokedexComponent,
+    GridComponent
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

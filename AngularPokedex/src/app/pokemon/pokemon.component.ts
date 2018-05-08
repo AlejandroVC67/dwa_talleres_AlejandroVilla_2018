@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-pokemon',
@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PokemonComponent implements OnInit {
 
-  public pokemonRating = 0
+  @Input() pokemonData: string;
+
+  public pokemonRating = 0;
 
   public ratePokemonUp () {
     this.pokemonRating++;
@@ -17,10 +19,24 @@ export class PokemonComponent implements OnInit {
     this.pokemonRating--;
   }
 
-
+  public values = {}
   constructor() { }
 
   ngOnInit() {
+    this.data = this.pokemonData.split(',')
+    this.values.name = this.data[1]
+    this.values.id = this.data[2]
+    this.values.index = this.values.id.slice(-1)
+    this.values.level = this.data[3]
+    this.values.type =  this.data[4]
+    this.values.ability = this.data[5]
+    this.values.height = this.data[6]
+    this.values.weight = this.data[7]
+    console.log(this.values)
+  }
+
+  getURL() {
+    return "url('../../assets/pokemon/" + this.values.index + ".png')"
   }
 
 }
